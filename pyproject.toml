@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "desktop-pet"
+version = "0.1.0"
+description = "A tiny click-through desktop pet cat built with PyQt5."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["PyQt5>=5.15"]
+keywords = ["desktop-pet", "pyqt5", "gui", "toy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: X11 Applications :: Qt",
+]
+
+[project.scripts]
+desktop-pet = "desktop_pet.app:main"
+
+[tool.setuptools]
+packages = ["desktop_pet"]
